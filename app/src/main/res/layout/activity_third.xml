@@ -8,15 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Second Activity"
-        android:textSize="20dp"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Open Third Activity"
-        android:layout_marginTop="20dp"
-        android:id="@+id/openThirdActivity"/>
+        android:text="Third Activity"
+        android:textSize="20dp"/>
 
 </LinearLayout>
