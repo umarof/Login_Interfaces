@@ -1,8 +1,12 @@
 package com.example.myapplication2;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +21,17 @@ public class ThirdActivity extends AppCompatActivity {
         setContentView(R.layout.activity_third);
 
         Log.d(TAG, "onCreate: ThirdActivity is created!");
+
+        Button openWebBtn = (Button) findViewById(R.id.openWebBtn);
+
+        openWebBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.freecodecamp.org/"));
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -48,5 +63,11 @@ public class ThirdActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         Log.d(TAG, "onRestart: ThirdActivity is restarted!");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy: ThirdActivity is destroyed!");
     }
 }
