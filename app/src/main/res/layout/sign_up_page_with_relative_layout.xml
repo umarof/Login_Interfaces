@@ -2,77 +2,43 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#B9CBCD"
-    >
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat = "@drawable/ic_social_facebook"
-        app:tint= "#3b5998"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="95dp"
-        />
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat = "@drawable/img_1"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="155dp"/>
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat = "@drawable/ic_social_instagram"
-        app:tint="#EF5350"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="215dp"/>
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat = "@drawable/ic_social_tiktok"
-        app:tint="#020202"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="268dp"/>
+    android:background="@color/material_dynamic_primary80"
+    android:gravity="center">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:text="Name"
         android:id="@+id/name"
         android:layout_centerVertical="true"
         android:paddingRight="130dp"
         android:layout_marginLeft="20dp"
-        />
+       />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Surname"
+        android:text="Surname"
         android:id="@+id/surname"
         android:layout_toRightOf="@+id/name"
         android:layout_centerInParent="true"
         android:layout_marginRight="20dp"/>
-
+    
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:text="Email"
         android:id="@+id/email"
         android:layout_below="@+id/name"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="120dp"
-        />
+      />
 
     <Button
         android:id="@+id/verify"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="VERIFY"
-        android:backgroundTint="#0F9386"
         android:layout_below="@+id/surname"
         android:layout_marginLeft="290dp"
         android:layout_marginRight="20dp"
@@ -83,8 +49,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Password"
         android:hint="Password"
-        android:inputType="textPassword"
         android:layout_below="@+id/email"
         android:id="@+id/password"
         android:layout_marginRight="20dp"
@@ -93,9 +59,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Confirm Password"
+        android:text="Confirm password"
         android:layout_below="@+id/password"
-        android:inputType="textPassword"
         android:id="@+id/confirmPassword"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
@@ -104,13 +69,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SIGN UP"
-        android:id="@+id/signUp"
-        android:backgroundTint="#0F9386"
         android:layout_below="@id/confirmPassword"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
-
-
 
 
 </RelativeLayout>

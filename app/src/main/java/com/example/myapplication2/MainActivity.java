@@ -20,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d(TAG, "onCreate: MainActivity is created!");
 
-        Button button = (Button) findViewById(R.id.openSecondActivity);
+        Button button = (Button) findViewById(R.id.signUp);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "Button is clicked!");
 
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, FacebookSplashActivity.class);
                 startActivity(intent);
             }
         });

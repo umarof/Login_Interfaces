@@ -24,6 +24,10 @@
 
         <activity android:name=".SecondActivity"/>
         <activity android:name=".ThirdActivity"/>
+        <activity android:name=".FacebookSplashActivity"/>
+        <activity android:name=".InstagramSplashActivity"/>
+        <activity android:name=".TwitterSplashActivity"/>
+        <activity android:name=".TikTokSplashActivity"/>
     </application>
 
 </manifest>
